@@ -1,0 +1,25 @@
+#!/bin/bash
+while true
+do 
+echo "l l   l l   l l l l   l     l   l     l"
+echo "l  l l  l   l         l l   l   l     l"
+echo "l   l   l   l l l     l  l  l   l     l"
+echo "l       l   l         l   l l   l     l"
+echo "l       l   l l l l   l     l   l l l l "
+
+echo "Enter 1 to get  mozilla firefox 1:"
+echo "Enter 2 to get  google chrome 2:"
+echo "Enter 3 to get  skype 3:"
+echo "Enter 4 to quit 4:"
+echo -e "\n"
+echo -e "Enter your selection \c"
+read var
+case "$var" in
+1) wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/43.0/linux-i686/en-US/firefox-43.0.tar.bz2 ;;
+2) wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb ;;
+3) wget download.skype.com/linux/skype-ubuntu-lucid_4.3.0.37-1_i386.deb ;;
+4) exit ;;
+esac
+echo -e "Enter return to continue \c"
+read input 
+done
